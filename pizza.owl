@@ -337,6 +337,16 @@
     
 
 
+    <!-- http://www.pizza.com/ontologies/pizza.owl#ProblemInconsistentTopping -->
+
+    <owl:Class rdf:about="http://www.pizza.com/ontologies/pizza.owl#ProblemInconsistentTopping">
+        <rdfs:subClassOf rdf:resource="http://www.pizza.com/ontologies/pizza.owl#CheeseTopping"/>
+        <rdfs:subClassOf rdf:resource="http://www.pizza.com/ontologies/pizza.owl#VegetableTopping"/>
+        <rdfs:comment>This class should be inconsistent when the ontology is classfied.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.pizza.com/ontologies/pizza.owl#RedPepperTopping -->
 
     <owl:Class rdf:about="http://www.pizza.com/ontologies/pizza.owl#RedPepperTopping">
