@@ -243,6 +243,25 @@
     
 
 
+    <!-- http://www.pizza.com/ontologies/pizza.owl#FourCheesePizza -->
+
+    <owl:Class rdf:about="http://www.pizza.com/ontologies/pizza.owl#FourCheesePizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.pizza.com/ontologies/pizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.pizza.com/ontologies/pizza.owl#hasTopping"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.pizza.com/ontologies/pizza.owl#CheeseTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://www.pizza.com/ontologies/pizza.owl#GreenPepperTopping -->
 
     <owl:Class rdf:about="http://www.pizza.com/ontologies/pizza.owl#GreenPepperTopping">
